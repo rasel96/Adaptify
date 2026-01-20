@@ -1,0 +1,29 @@
+:root {
+  /*Colors*/
+  --primary-base: #1a0b2e;
+  /* Gradient style */
+
+  --gradient-style: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-container {
+  background-color: var(--primary-base);
+}
+.gradient-btn {
+}
