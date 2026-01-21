@@ -1,6 +1,9 @@
 :root {
+  /*Font Size*/
+  --text-base: 1.6rem;
   /*Colors*/
   --primary-base: #1a0b2e;
+  ---primary-text: #ffffff;
   /* Gradient style */
 
   --gradient-style: linear-gradient(
@@ -21,9 +24,80 @@ html {
 body {
   font-family: 'Inter', sans-serif;
 }
-
-.navbar-container {
+/*Global-Style*/
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/*navbar*/
+.navbar {
   background-color: var(--primary-base);
 }
+.navbar-container {
+  /* max-width: 1600px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-ul {
+  display: flex;
+  gap: 3.2rem;
+  font-size: var(--text-base);
+}
+.navbar-ul li a {
+  color: var(---primary-text);
+}
+.nav-logo {
+  max-width: 219px;
+  width: 100%;
+  padding-top: 2.7rem;
+  padding-bottom: 2.7rem;
+}
 .gradient-btn {
+  border-radius: 1000px;
+  border: none;
+  background-size: 200% 200%;
+  background: var(--gradient-style);
+  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+  color: var(---primary-text);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-position 0.6s ease;
+  gap: 0.6rem;
+  font-size: var(--text-base);
+}
+.gradient-btn:hover {
+  transform: translateY(-2px);
+  background-position: right center;
+  box-shadow: 0 12px 30px rgba(255, 0, 150, 0.35);
+  cursor: pointer;
+}
+.special-hamb {
+  display: none;
+}
+@media (max-width: 36rem) {
+  html {
+    font-size: 40%;
+  }
+  .navbar-ul {
+    display: none !important;
+  }
+  .nav-btn {
+    display: none !important;
+  }
+  .special-hamb {
+    display: block;
+  }
+  .navbar-container {
+    width: 95%;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    margin-left: 3rem;
+    max-width: 137px;
+    width: 100%;
+  }
 }
