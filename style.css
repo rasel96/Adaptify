@@ -303,6 +303,7 @@ ul {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 10rem;
 }
 .choose-content h1 {
   color: var(--primary-text);
@@ -418,6 +419,114 @@ ul {
   opacity: 0.6;
   font-size: 1.6rem;
 }
+
+/* Feature Section */
+.feature {
+  background-color: var(--primary-base);
+}
+.feature-content {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.feature-content h1 {
+  color: var(--primary-text);
+  font-size: var(--text-h1);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+.feature-flex {
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 3rem;
+}
+.flx-1 {
+  background: rgba(53, 17, 101, 0.4);
+  border-radius: 3rem;
+}
+.flx-1 iframe {
+  border-radius: 3rem 3rem 0 0;
+}
+
+.feature-flex h3 {
+  font-size: 2.4rem;
+  text-align: left;
+  padding: 2.4rem;
+  padding-bottom: 1.2rem;
+  color: var(--primary-text);
+}
+.feature-flex .ppi {
+  font-size: 1.6rem;
+  opacity: 0.6;
+  color: var(--primary-text);
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+.feature-flex {
+}
+
+.flexii {
+  display: flex;
+
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2.4rem;
+  gap: 1rem;
+}
+.flexii p {
+  color: #00ff88;
+  opacity: 1;
+  font-size: 1.6rem;
+}
+.host{
+   max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.host h1 {
+  color: var(--primary-text);
+  font-size: var(--text-h1);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+.host-flex{
+  display: flex;
+  background-color: #230e3d;
+  gap: 2.4rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: 4rem;
+}
+.host-flex-content h2{
+  color: var(--primary-text);
+  font-size: 3.2rem;
+}
+.host-flex-content p{
+  color: var(--primary-text);
+  font-size: 1.6rem;
+  opacity: 0.3;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.host-flex-content{}
+.host-flex-content{}
+.icon-flexi{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.icon-flexi a{
+  border: 1px solid #533c72;
+  padding: 0.7rem;
+  border-radius: 100%;
+}
 /* Media Query */
 @media (max-width: 36rem) {
   html {
@@ -484,11 +593,17 @@ ul {
       'box-5';
 
     width: 100%;
-    justify-items: stretch; /* important */
+    justify-items: stretch;
     gap: 1.5rem;
   }
 
   .grid-container > div {
     width: 100%;
+  }
+  .feature-flex {
+    flex-direction: column;
+  }
+  .flexii p {
+    font-size: 2.2rem;
   }
 }
